@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<meta lang="en-US">
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width initial-scale=1.0">
+<head>
+    <title> Register page</title>
+
+<body>
+    <style>
+        .Register-box{    
+     width: 400px;
+     height: 400px;
+     background-color: rgb(210, 208, 208);
+     margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 2px;
+   
+        }
+        .Register-box h2{
+            
+            color: rgb(81, 149, 205);
+            text-align:center;
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+        .Register-box input,
+        .Register-box select{
+             display: block;        
+             margin: 0 auto;
+            color: rgb(81, 149, 205); 
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        } 
+     .Register-box  button{
+        display: block;        
+         margin: 0 auto;
+         margin-top: 70px;
+        color: rgb(81, 149, 205);
+        width: 80px;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        border-color: rgb(210, 208, 208);
+        border-radius: 4px;
+        cursor: pointer;
+     }
+    .Register-box label {  
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+    </style>
+</head>
+    <div class="Register-box">
+    <h2>Register here</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <label for="gender">Gender</label><br>
+    <select id="gender" name="gender">
+        <option value="" disabled selected >Select your gender</option>
+        <option value="Female">Femal</option>
+        <option value="Male">male</option>
+    </select>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="enter your password">
+     <button type="submit">Register</button>
+</div>
+</body>
